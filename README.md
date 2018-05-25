@@ -1,7 +1,3 @@
-[![Build Status](https://img.shields.io/travis/andrej-griniuk/cakephp-fractal-transformer-view/master.svg?style=flat-square)](https://travis-ci.org/andrej-griniuk/cakephp-fractal-transformer-view)
-[![Coverage Status](https://img.shields.io/coveralls/andrej-griniuk/cakephp-fractal-transformer-view.svg?style=flat-square)](https://coveralls.io/r/andrej-griniuk/cakephp-fractal-transformer-view?branch=master)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
-
 # FractalTransformerView plugin for CakePHP
 
 This plugin is a thin wrapper for `JsonView` that allows using [Fractal transformers][fractal-transformer] for your API output. What is [Fractal][fractal]?
@@ -12,14 +8,14 @@ This plugin is a thin wrapper for `JsonView` that allows using [Fractal transfor
 
 ## Requirements
 
-- CakePHP 3.1+
+- CakePHP 3.6+
 
 ## Installation
 
 You can install this plugin into your CakePHP application using [Composer][composer].
 
 ```bash
-composer require andrej-griniuk/cakephp-fractal-transformer-view
+composer require jeffersonsimaogoncalves/cakephp-fractal-transformer-view
 ```
 
 
@@ -90,19 +86,13 @@ $this->set('_transform', ['articles' => false]);
 
 ## Bugs & Feedback
 
-https://github.com/andrej-griniuk/cakephp-fractal-transformer-view/issues
+https://github.com/jeffersonsimaogoncalves/cakephp-fractal-transformer-view/issues
 
 ## Credits
 
-Inspired by @josegonzalez [Using Fractal to transform entities for custom api endpoints](http://josediazgonzalez.com/2015/12/01/using-fractal-to-transform-entities-for-custom-api-endpoints/).
-
-## License
-
-Copyright (c) 2016, [Andrej Griniuk][andrej-griniuk] and licensed under [The MIT License][mit].
+This work is based on the [code by Andrej Griniuk](https://github.com/andrej-griniuk/cakephp-fractal-transformer-view).
 
 [cakephp]:http://cakephp.org
 [composer]:http://getcomposer.org
 [fractal]:http://fractal.thephpleague.com/
 [fractal-transformer]:http://fractal.thephpleague.com/transformers/
-[mit]:http://www.opensource.org/licenses/mit-license.php
-[andrej-griniuk]:https://github.com/andrej-griniuk
