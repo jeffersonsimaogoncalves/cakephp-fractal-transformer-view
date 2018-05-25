@@ -19,7 +19,9 @@ use League\Fractal\Serializer\SerializerAbstract;
 use League\Fractal\TransformerAbstract;
 
 /**
- * FractalTransformerView class
+ * Class FractalTransformerView
+ *
+ * @package FractalTransformerView\View
  */
 class FractalTransformerView extends JsonView
 {
@@ -183,6 +185,7 @@ class FractalTransformerView extends JsonView
      * @param array|string|bool $serialize The name(s) of the view variable(s) that
      *   need(s) to be serialized. If true all available view variables will be used.
      * @return mixed The data to serialize.
+     * @throws \Exception
      */
     protected function _dataToSerialize($serialize = true)
     {
