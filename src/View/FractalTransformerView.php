@@ -1,7 +1,7 @@
 <?php
+
 namespace FractalTransformerView\View;
 
-use Cake\Core\Configure;
 use Cake\Datasource\EntityInterface;
 use Cake\Event\EventManager;
 use Cake\Network\Request;
@@ -43,7 +43,8 @@ class FractalTransformerView extends JsonView
         Response $response = null,
         EventManager $eventManager = null,
         array $viewOptions = []
-    ) {
+    )
+    {
         if (isset($viewOptions['serializer'])) {
             $this->setSerializer($viewOptions['serializer']);
         }
@@ -118,7 +119,7 @@ class FractalTransformerView extends JsonView
      *
      * @param mixed $var variable
      * @param bool $varName variable name
-     * @return bool
+     * @return bool|\League\Fractal\TransformerAbstract
      * @throws Exception
      */
     protected function getTransformer($var, $varName = false)
@@ -156,7 +157,7 @@ class FractalTransformerView extends JsonView
     /**
      * Transform var using given manager
      *
-     * @param Manager $manager  Fractal manager
+     * @param Manager $manager Fractal manager
      * @param mixed $var variable
      * @param bool $varName variable name
      * @return array
