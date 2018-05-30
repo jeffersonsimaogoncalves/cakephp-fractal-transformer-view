@@ -33,10 +33,10 @@ class FractalTransformerView extends JsonView
     /**
      * Constructor
      *
-     * @param \Cake\Network\Request $request Request instance.
-     * @param \Cake\Network\Response $response Response instance.
+     * @param \Cake\Network\Request    $request      Request instance.
+     * @param \Cake\Network\Response   $response     Response instance.
      * @param \Cake\Event\EventManager $eventManager EventManager instance.
-     * @param array $viewOptions An array of view options
+     * @param array                    $viewOptions  An array of view options
      */
     public function __construct(
         Request $request = null,
@@ -60,6 +60,7 @@ class FractalTransformerView extends JsonView
      * Sets the serializer
      *
      * @param \League\Fractal\Serializer\SerializerAbstract|null $serializer Serializer to use
+     *
      * @return void
      */
     public function setSerializer(SerializerAbstract $serializer = null)
@@ -85,6 +86,7 @@ class FractalTransformerView extends JsonView
      * Get transform class name for given var by figuring out which entity it belongs to. Return FALSE otherwise
      *
      * @param mixed $var variable
+     *
      * @return bool|string
      */
     protected function getTransformerClass($var)
@@ -117,8 +119,9 @@ class FractalTransformerView extends JsonView
     /**
      * Get transformer for given var
      *
-     * @param mixed $var variable
-     * @param bool $varName variable name
+     * @param mixed $var     variable
+     * @param bool  $varName variable name
+     *
      * @return bool|\League\Fractal\TransformerAbstract
      * @throws Exception
      */
@@ -158,8 +161,9 @@ class FractalTransformerView extends JsonView
      * Transform var using given manager
      *
      * @param Manager $manager Fractal manager
-     * @param mixed $var variable
-     * @param bool $varName variable name
+     * @param mixed   $var     variable
+     * @param bool    $varName variable name
+     *
      * @return array
      * @throws Exception
      */
@@ -184,7 +188,8 @@ class FractalTransformerView extends JsonView
      * Returns data to be serialized.
      *
      * @param array|string|bool $serialize The name(s) of the view variable(s) that
-     *   need(s) to be serialized. If true all available view variables will be used.
+     *                                     need(s) to be serialized. If true all available view variables will be used.
+     *
      * @return mixed The data to serialize.
      * @throws \Exception
      */

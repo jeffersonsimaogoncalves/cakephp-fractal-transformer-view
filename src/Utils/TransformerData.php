@@ -30,6 +30,7 @@ class TransformerData
     /**
      * @param $data
      * @param $transform
+     *
      * @return array
      * @throws \Exception
      */
@@ -53,7 +54,8 @@ class TransformerData
 
     /**
      * @param \League\Fractal\Manager $manager
-     * @param $var
+     * @param                         $var
+     *
      * @return array
      * @throws \Exception
      */
@@ -104,6 +106,7 @@ class TransformerData
 
     /**
      * @param $var
+     *
      * @return bool|string
      */
     protected function getTransformerClass($var)
