@@ -9,8 +9,19 @@
 
 namespace FractalTransformerView;
 
+use Cake\Core\BasePlugin;
 
-class Plugin
+/**
+ * Class Plugin
+ *
+ * @author Jefferson Simão Gonçalves <gerson.simao.92@gmail.com>
+ *
+ * @package FractalTransformerView
+ */
+class Plugin extends BasePlugin
 {
-
+    protected $routesEnabled = false;
+    protected $bootstrapEnabled = false;
+    protected $middlewareEnabled = false;
+    protected $consoleEnabled = false;
 }
