@@ -113,7 +113,7 @@ class TransformerData
     {
         $entity = null;
         if ($var instanceof Query) {
-            $entity = $var->repository()->newEntity();
+            $entity = $var->getRepository()->newEmptyEntity();
         } elseif ($var instanceof ResultSet) {
             $entity = $var->first();
         } elseif ($var instanceof EntityInterface) {
